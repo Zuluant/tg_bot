@@ -17,7 +17,9 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def help(message):
-    mess = f'В этом боте можно узнать какой будет следующий урок, а также получить на него код и ссылку.'
+    mess = f'В этом боте можно узнать какой будет следующий урок, а также получить на него код и ссылку.' \
+           f'Внимание! Бот не предоставляет ссылок на конференции для первой группы, а также не даёт ссылки' \
+           f' на чередующиеся уроки'
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     what_lesson_now = types.KeyboardButton('/lesson')
     markup.add(what_lesson_now)
