@@ -20,3 +20,4 @@ def what_is_lesson_now(day, time):
     for i in days[day]:
         if time <= i:
             return days[day][i]
+        return 'Уроков больше нету!'
