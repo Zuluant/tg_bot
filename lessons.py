@@ -9,8 +9,14 @@ days = {
         1420: 'История Украины',
     },
     'Friday': {
-        1633: 'Test1',
-        1634: 'Test2',
-        1635: 'Test3'
+        1701: 'Test1',
+        1702: 'Test2',
+        1805: 'Test3'
     }
 }
+
+
+def what_is_lesson_now(day, time):
+    for i in days[day]:
+        if time <= i:
+            return days[day][i]

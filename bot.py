@@ -3,7 +3,6 @@ import lessons
 from datetime import datetime
 from telebot import types
 
-
 bot = telebot.TeleBot('5799245966:AAEy8F_GkpAqXr9la3FiZaXv17EK1n9DhyE')
 
 
@@ -27,11 +26,9 @@ def help(message):
 
 @bot.message_handler(commands=['lesson'])
 def lesson(message):
-    current_time = datetime.now().strftime('%H:%M:%S')
+    current_time = int(datetime.now().strftime('%H%M'))
     day = datetime.now().strftime('%A')
-    if day == 'Friday':
-
-    bot.send_message(message.chat.id, day)
+    bot.send_message(message.chat.id, lessons.what_is_lesson_now(day, current_time))
 
 
 bot.polling(none_stop=True)
