@@ -13,7 +13,7 @@ def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     button_help = types.KeyboardButton('/help')
     markup.add(button_help)
-    sti = open(f'stickers/{random.randint(1, 8)}.tgs', 'rb')
+    sti = open(f'stickers/{random.randint(1, 15)}.tgs', 'rb')
 
     bot.send_sticker(message.chat.id, sti)
     bot.send_message(message.chat.id, mess, reply_markup=markup)
