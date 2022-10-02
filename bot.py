@@ -2,6 +2,7 @@ import telebot
 import lessons
 from datetime import datetime
 from telebot import types
+import random
 
 bot = telebot.TeleBot('5799245966:AAEy8F_GkpAqXr9la3FiZaXv17EK1n9DhyE')
 
@@ -12,6 +13,9 @@ def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     button_help = types.KeyboardButton('/help')
     markup.add(button_help)
+    sti = open(f'stickers/{random.randint(1, 8)}.tgs', 'rb')
+
+    bot.send_sticker(message.chat.id, sti)
     bot.send_message(message.chat.id, mess, reply_markup=markup)
 
 
