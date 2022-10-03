@@ -1,6 +1,7 @@
 days = {
     'Monday': {
-        830: 'Громадянська освіта 08:30',
+        830: f'Громадянська освіта 08:30 \n\nhttps://us04web.zoom.us/j/86764533136?pwd=SkpFUGFacDZxRitrVVhVd3pPalVXUT09\n'
+             f'\nИдентификатор конференции: 867 6453 3136\nКод доступа: HK96gN',
         925: f'Фізика 09:25 \n\nhttps://us04web.zoom.us/j/76766170040?pwd=VCTVN0MPEc72fXa4j2EedqIz8CAhqK.1\n'
              f'\nИдентификатор конференции: 798 6745 8647\nКод доступа: 58mWUA',
         1020: f'Математика 10:20 \n\nhttps://us04web.zoom.us/j/72479349277?pwd=aMjDcVi3zzAmrERKhcLwvJH7Uufpyy.1\n'
@@ -64,7 +65,8 @@ days = {
              f'\nИдентификатор конференции: 834 3658 6849\nКод доступа: 7tfEwz'
     },
     'Friday': {
-        830: f'Громадянська освіта 08:30',
+        830: f'Громадянська освіта 08:30 \n\nhttps://us04web.zoom.us/j/86764533136?pwd=SkpFUGFacDZxRitrVVhVd3pPalVXUT09\n'
+             f'\nИдентификатор конференции: 867 6453 3136\nКод доступа: HK96gN',
         925: f'Фізика 09:25 \n\nhttps://us04web.zoom.us/j/76766170040?pwd=VCTVN0MPEc72fXa4j2EedqIz8CAhqK.1\n'
              f'\nИдентификатор конференции: 798 6745 8647\nКод доступа: 58mWUA',
         1020: f'Зарубіжна література 10:20 \n\nhttps://us04web.zoom.us/j/5780308192?pwd=VnB3SXUwWVA5dmNoZWxhVEtWT2N1Zz09\n'
@@ -81,7 +83,7 @@ days = {
         2359: 'Сегодня выходной!'
     },
     'Sunday': {
-        2359: 'Сегодня выходной!'
+        2359: 'Сегодня выходной!',
     }
 }
 
