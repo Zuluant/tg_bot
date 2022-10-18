@@ -90,6 +90,9 @@ days = {
 
 def what_is_lesson_now(day, time):
     for i in days[day]:
-        if time <= i:
+        if time-45 <= i:
             return days[day][i]
     return 'Уроки на сегодня закончились!'
+
+
+print(what_is_lesson_now('Friday', 925))
