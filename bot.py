@@ -3,8 +3,9 @@ import lessons
 from datetime import datetime
 from telebot import types
 import random
+import os
 
-bot = telebot.TeleBot('5799245966:AAEy8F_GkpAqXr9la3FiZaXv17EK1n9DhyE')
+bot = telebot.TeleBot(os.environ.get('SCHOOL_BOT_TOKEN'))
 
 
 @bot.message_handler(commands=['start'])
