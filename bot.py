@@ -15,10 +15,11 @@ def start(message):
     button_help = types.KeyboardButton('/help')
     markup.add(button_help)
     sti = open(f'stickers/{random.randint(1, 15)}.tgs', 'rb')
-    sti.close()
 
     bot.send_sticker(message.chat.id, sti)
     bot.send_message(message.chat.id, mess, reply_markup=markup)
+
+    sti.close()
 
 
 @bot.message_handler(commands=['help'])
