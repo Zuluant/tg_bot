@@ -1,9 +1,9 @@
 import telebot
 import lessons
-from datetime import datetime
-from telebot import types
 import random
 import os
+from datetime import datetime
+from telebot import types
 
 bot = telebot.TeleBot(os.environ.get('SCHOOL_BOT_TOKEN'))
 
