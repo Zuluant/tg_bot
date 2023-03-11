@@ -88,7 +88,7 @@ days = {
 }
 
 
-def what_is_lesson_now(day, time):
+def check_lesson(day, time):
     for i in days[day]:
         if time-85 <= i:
             return days[day][i]

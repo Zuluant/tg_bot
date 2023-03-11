@@ -35,7 +35,7 @@ def help(message):
 def lesson(message):
     current_time = int(datetime.now().strftime('%H%M'))
     day = datetime.now().strftime('%A')
-    bot.send_message(message.chat.id, lessons.what_is_lesson_now(day, current_time))
+    bot.send_message(message.chat.id, lessons.check_lesson(day, current_time))
 
 
 bot.polling(none_stop=True)
